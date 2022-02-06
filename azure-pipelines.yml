@@ -39,8 +39,7 @@ jobs:
               script: |
                 # Modify deployment script based on the app type
                 echo "Starting deployment script run"
-                sudo chmod +x '$(Pipeline.Workspace)/drop/**/target/*.jar'
-                sudo java -jar '$(Pipeline.Workspace)/drop/**/target/*.jar'
+                sudo java -jar '$(Pipeline.Workspace)/drop/target/spring-petclinic-2.6.0-SNAPSHOT.jar'
         routeTraffic:
           steps:
           - script: echo routing traffic
