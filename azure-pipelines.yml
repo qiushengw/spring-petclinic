@@ -35,7 +35,7 @@ jobs:
           steps:
           - task: CmdLine@2
             inputs:
-              script: 'C:\Users\qiusheng.wang\Downloads\openjdk-11+28_windows-x64_bin\jdk-11\bin\java -jar ''$(Pipeline.Workspace)/drop/target/spring-petclinic-2.6.0-SNAPSHOT.jar'''
+              script: 'C:/scripts/start.bat'
         #  - task: Bash@3
         #    inputs:
         #      targetType: 'inline'
