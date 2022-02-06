@@ -16,8 +16,8 @@ jobs:
     artifact: drop
 
 
- 
 - deployment: VMDeploy
+  dependsOn: Build
   displayName: web
   environment:
     name:  test-pub-vm
