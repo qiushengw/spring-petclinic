@@ -22,7 +22,7 @@ jobs:
   environment:
     name:  test-pub-vm
     resourceType: VirtualMachine
-    tags: linux
+    tags: dev
   strategy:
       rolling:
         maxParallel: 5  #for percentages, mention as x%
